@@ -36,7 +36,8 @@ def get_skin_from_uuid(uuid_str: str):
     try:
         uuid = string_to_uuid(uuid_str)
         skin_value = get_tailor_skin_value_from_uuid(uuid)
-    except:
+    except Exception as e:
+        print(e)
         if uuid_str.startswith("00000000-0000-0000-"):
             skin_value = get_bedrock_skin_value_from_uuid(uuid_str)
     if skin_value is None:
