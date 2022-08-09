@@ -1,4 +1,4 @@
 fastapi==0.79.0
-NBT==1.5.1
 uvicorn==0.18.2
 requests==2.26.0
+mutf8==1.0.6

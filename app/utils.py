@@ -1,5 +1,5 @@
 from uuid import UUID
-from nbt import nbt
+import app.nbt as nbt
 from base64 import b64decode
 import json
 import requests
